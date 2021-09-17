@@ -1,0 +1,850 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tablas</title>
+
+	<style type="text/css">
+
+	     *{
+	     	margin: 0;
+	     	padding: 0;
+	     }
+
+	     body{
+	     	font-family: Arial;
+	     	background-color: #FFF7EE;
+	     }
+
+	     H3{
+
+	     	color: red;
+	     }
+	     p{
+	     	text-align: center;
+	     }
+
+	     .contenedor-tablas{
+
+	     	display: flex;
+	     	justify-content: center;
+	     }
+		 
+		 table{
+		
+		 	border: 1px solid red;
+            border-collapse: collapse; /*no deja juntas en la tabla*/
+
+
+		 }
+		 .Argentina{
+		 	background: pink;
+		 }
+
+		 .fmi{
+
+		 	text-align: right;
+		 	font-size: 14px;
+		 }
+
+		 td{
+
+		 	padding: 8px;
+		 	border: 1px solid red;
+		 }
+         .ultima-fila{
+         	border: skyblue;
+         }
+
+         /*--tabla 2*/
+
+         .formato-previsiones{
+
+           padding-bottom: 80px;            
+         }
+
+
+         
+         /*tabla--------4*/
+         
+         .negativo{
+         	color: red;
+         }
+
+         .positivo{
+         	color: green;
+         }
+
+         .formato-th-cuatro{
+         	font-size: 12px;
+         	padding: 5px;
+         }
+
+         .item-1{
+         	color: #02A3FF;
+         }
+
+         .item-2{
+         	color: #8CD5FF;
+         }
+
+         .item-3{
+         	color: #0DB92C;
+         }
+
+         .DosmilDiezsiseis{
+            
+            background-color:#02A3FF;
+         }
+
+         .DosmilDiezsiete{
+             
+             background-color:#8CD5FF;
+
+         }
+
+
+
+         /*tabla-5*/
+
+         .americaLatina-style{
+
+           border: 1px solid #77DAFF;
+         }
+         
+         .años{
+         	background: yellow;
+         }
+         .-arg{
+
+            background-color: #FFD3D3;
+         }
+
+         .-america{
+
+         	background-color: #E1FFFF;
+         }
+         
+         /*tabla-6*/
+          
+         .energeticos{
+
+         	 padding: 10px;
+         }
+
+         .productos-energeticos{
+
+         	background-color: #E6EAEA;
+         }
+          
+         .Un-porciento{
+             
+            background-color: #BEB6FF;
+         }
+         .Dos-porciento{
+            background-color: #98FF74;
+         }
+         .Tres-porciento{
+            background-color: #8BFFF3;	
+         }
+         .Cuatro-porciento{
+             background-color: #54A5FF;
+         }
+         .Cinco-porciento{
+         	background-color: #FF6C6C;
+         }
+
+
+	</style>
+
+</head>
+<body>
+
+
+   <h1>PRÁCTICAS PROFESIONALIZANTES I</h1>
+   <h2>Trabajo práctico – Tablas</h2>
+   <h3>ALUMNO: SANTIAGO FRAGA</h3>
+
+   <br><br>
+ <p>Utilizando HTML, represente la siguiente información. No es necesario por el momento aplicarle el formato mostrado, solo la estructura y los datos.<br><br><hr><br><br>1. Utilizando tablas, represente la siguiente información correspondiente a los índices de inflación de 2019:</p>
+   <br><br>
+
+<!--Tabla 1-->
+ <div class="contenedor-tablas">
+   <table>
+            <tr> <!--filas (tr)-->
+                <th colspan="2">PAIS</th>
+                <th>%</th>
+            </tr>
+            <tr>
+                <td>1</td> <!--td(columnas)-->
+                <td>Venezuela</td>
+                <td>10.000.000</td>
+            </tr>
+            <tr>
+                <td>2</td> <!--td(columnas)-->
+                <td>Sudán</td>
+                <td>58.2</td>
+            </tr>            
+            <tr>
+                <td>3</td> <!--td(columnas)-->
+                <td>Zimbabue</td>
+                <td>40,1</td>
+            </tr>        
+            <tr>
+                <td>4</td> <!--td(columnas)-->
+                <td>Sudán del Sur</td>
+                <td>35,2</td>
+            </tr>   
+            <tr>
+                <td>5</td> <!--td(columnas)-->
+                <td>Irán</td>
+                <td>31,2</td>
+            </tr>   
+            <tr class="Argentina">
+                <td>6</td> <!--td(columnas)-->
+                <td>Argentina</td>
+                <td>30,5</td>
+            </tr>  
+            <tr>
+                <td>7</td> <!--td(columnas)-->
+                <td>Liberia</td>
+                <td>21,8</td>
+            </tr>  
+            <tr>
+                <td>8</td> <!--td(columnas)-->
+                <td>Uzbekistán</td>
+                <td>15,7</td>
+            </tr>  
+            <tr>
+                <td>9</td> <!--td(columnas)-->
+                <td>Turquía</td>
+                <td>15,5</td>
+            </tr>  
+            <tr>
+                <td>10</td> <!--td(columnas)-->
+                <td>Angola</td>
+                <td>15,0</td>
+            </tr>  
+            <tr>
+                <td>11</td> <!--td(columnas)-->
+                <td>Libía</td>
+                <td>15,0</td>
+            </tr>  
+            <tr>
+                <td>12</td> <!--td(columnas)-->
+                <td>Sierra Leona</td>
+                <td>14,0</td>
+            </tr>  
+            <tr>
+                <td>13</td> <!--td(columnas)-->
+                <td>Haití</td>
+                <td>14,0</td>
+            </tr>  
+            <tr>
+                <td>14</td> <!--td(columnas)-->
+                <td>Zambia</td>
+                <td>13,5</td>
+            </tr>  
+            <tr>
+                <td>15</td> <!--td(columnas)-->
+                <td>Egipto</td>
+                <td>12,8</td>
+            </tr>  
+            <tr>
+                <td>16</td> <!--td(columnas)-->
+                <td>Nigería</td>
+                <td>12,1</td>
+            </tr>  
+            <tr>
+                <td>17</td> <!--td(columnas)-->
+                <td>Yemen</td>
+                <td>10,0</td>
+            </tr>  
+             <tr class="ultima-fila">
+                <td colspan="3" class="fmi">Fuente:FMI, WEO</td>
+            </tr> 
+   </table>
+ </div>
+
+     <br><br>
+   <hr>
+       <br><br>
+     <p>2. Represente la siguiente información mediante una tabla:</p>
+       <br><br>
+
+<!--Tabla 2-->
+<div class="contenedor-tablas">
+   <table>
+            <tr> <!--filas (tr)-->
+                <th class="formato-previsiones">Previsiones macroeconomicas anuales</th>
+                <th>2017</th>
+                <th>2018e</th>
+                <th>2019e</th>
+                <th>2020e</th>
+            </tr>
+            <tr>
+                <td>PBI(% ala)</td>
+                <td>24,8</td>
+                <td>47,6</td>
+                <td>30,0</td>
+                <td>17,6</td>
+            </tr>
+            <tr>
+                <td>Inflacion IPC Nacional (% ala, fdp)</td>
+                <td>-2.9</td>
+                <td>-1.9</td>
+                <td>1.0</td>
+                <td>2.9</td>
+            </tr>
+            <tr>
+                <td>Ripo de cambio (vs USD, fdp)</td>
+                <td>17.7</td>
+                <td>37.0</td>
+                <td>49,0</td>
+                <td>55.0</td>
+            </tr>
+            <tr>
+                <td>Tasa de politica monetario (%, fdp)</td>
+                <td>28,8</td>
+                <td>78.0</td>
+                <td>32,0</td>
+                <td>3.0</td>
+            </tr>
+             <tr>
+                <td>Consumo Privado (% ala)</td>
+                <td>23,8</td>
+                <td>7.0</td>
+                <td>2,0</td>
+                <td>33.0</td>
+            </tr>
+             <tr>
+                <td>Consumo Publico(% ala)</td>
+                <td>23,8</td>
+                <td>7.0</td>
+                <td>2,0</td>
+                <td>33.0</td>
+            </tr>
+            <tr>
+                <td>inversion(% ala)</td>
+                <td>23,8</td>
+                <td>7.0</td>
+                <td>2,0</td>
+                <td>33.0</td>
+            </tr>
+             <tr>
+                <td>Resultado Fiscal total (% PIB)</td>
+                <td>23,8</td>
+                <td>7.0</td>
+                <td>2,0</td>
+                <td>33.0</td>
+            </tr>
+            <tr>
+                <td>Cuenta Corriente (%Pib)</td>
+                <td>23,8</td>
+                <td>7.0</td>
+                <td>2,0</td>
+                <td>33.0</td>
+            </tr>    
+   </table>
+ </div>
+
+   <br><br>
+   <hr>
+       <br><br>
+     <p>3. Represente las siguientes proyecciones utilizando tablas:</p>
+       <br><br>
+
+<!--Tabla 3-->
+<div class="contenedor-tablas">
+   <table border="2">
+
+        <tr> <!--filas (tr)-->
+            <th>Proyecciones<br> <br>Indicadores economicos<br>y financieros</th>
+            <th>2018</th>
+            <th>2019</th>
+
+        </tr>
+        <tr> <!--filas (tr)-->
+            <th>Junio</th> 
+            <th>Octubre</th> 
+            <th>Junio Octubre</th>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <th>PBI</th>
+            <th>0,4%</th>
+            <th>-2,6</th>
+            <th>1,5%</th>
+            <th>-1,6%</th>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <th>Inflación</th>
+            <th>27,0%</th>
+            <th>40,5%</th>
+            <th>17,0%</th>
+            <th>20,2%</th>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <th>Desempleo</th>
+            <th>8,5%</th>
+            <th>8,9%</th>
+            <th>8,6%</th>
+            <th>9,4%</th>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <th>Cuenta corriente % del PBI</th>
+            <th>-3,6%</th>
+            <th>-3,7</th>
+            <th>-3,2%</th>
+            <th>-3,2%</th>
+        </tr>
+   </table>
+ </div>
+
+     <br><br>
+  <hr>
+     <br><br>
+  <p>4. Realice una tabla que represente la información de la siguiente gráfica:</p>
+       <br><br>
+
+<!--Tabla 4-->
+
+<div class="contenedor-tablas">
+   <table border="2">
+       
+        </tr>
+        <tr> <!--filas (tr)-->
+            <th colspan="9">EXPORTACIONES</th>
+        </tr>
+         <tr> <!--filas (tr)-->    
+            <th class="DosmilDiezsiseis" colspan="5">2016</th>
+             <th class="DosmilDiezsiete" colspan="4">2017</th>
+        </tr>
+        <tr> <!--filas (tr)-->
+        	<th></th>
+            <th class="formato-th-cuatro">Productos<br>primarios</th>
+            <th class="formato-th-cuatro">Manufacturas<br>de<br>origen<br>agropecuario</th>
+            <th class="formato-th-cuatro">Manufacturas<br>de<br>origen<br>industrial</th>
+            <th class="formato-th-cuatro">Combustibles<br>y<br>energías</th>
+            
+            <!--2017-->
+           <th class="formato-th-cuatro">Productos<br>primarios</th>
+            <th class="formato-th-cuatro">Manufacturas<br>de<br>origen<br>agropecuario</th>
+            <th class="formato-th-cuatro">Manufacturas<br>de<br>origen<br>industrial</th>
+            <th class="formato-th-cuatro">Combustibles<br>y<br>energías</th>
+        </tr>
+
+        <tr> <!--filas (tr)-->
+            <td> 25.000 +</td> 
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <td></td> 
+        </tr>
+
+        <tr> <!--filas (tr)-->
+            <td>20.000 +</td>
+            <td></td> 
+            <td>X</td>
+            <td>X</td> 
+            <td></td>
+            <td></td> 
+            <!--2017-->
+            <td class="negativo"><b>-3,6%</b></td>
+            <td class="positivo"><b>11,2%</b></td> 
+            
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td>15.000 +</td>
+            <td>X</td> 
+            <td></td>
+            <td></td> 
+            <td></td>
+            <!--2017-->
+            <td class="negativo"><b>-5,6%</b></td> 
+            <td></td>
+            <td></td>
+            <td></td> 
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td>10.000 +</td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <td></td> 
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td>5.000 +</td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr> <!--filas (tr)-->
+            <td>0 +</td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td>X</td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <td class="positivo"><b>18,7%</b></td> 
+        </tr>
+     
+   </table>
+ </div>
+   <br><br>
+ <div class="contenedor-tablas">
+   <table border="2">
+       
+        </tr>
+        <tr> <!--filas (tr)-->
+            <th colspan="19">IMPORTACIONES</th>
+        </tr>
+         <tr> <!--filas (tr)-->    
+            <th class="DosmilDiezsiseis" colspan="8">2016</th>
+             <th class="DosmilDiezsiete" colspan="8">2017</th>
+        </tr>
+        <tr> <!--filas (tr)-->
+        	<th></th>
+            <th class="formato-th-cuatro">Bienes<br>de<br>capital</th>
+            <th class="formato-th-cuatro">Bienes<br>intermedios</th>
+            <th class="formato-th-cuatro">Combustibles<br>y<br>lubricantes</th>
+            <th class="formato-th-cuatro">Piezas<br>y<br>accesorios<br>para<br>bienes de<br>capital</th>
+            <th class="formato-th-cuatro">Bienes<br>de<br>consumo</th>
+            <th class="formato-th-cuatro">Vehiculos<br>automotores<br>de<br>pasajeros</th>
+            <th class="formato-th-cuatro">Resto</th>
+           
+            <!--2017-->
+            <th class="formato-th-cuatro">Bienes<br>de<br>capital</th>
+            <th class="formato-th-cuatro">Bienes<br>intermedios</th>
+            <th class="formato-th-cuatro">Combustibles<br>y<br>lubricantes</th>
+            <th class="formato-th-cuatro">Piezas<br>y<br>accesorios<br>para<br>bienes de<br>capital</th>
+            <th class="formato-th-cuatro">Bienes<br>de<br>consumo</th>
+            <th class="formato-th-cuatro">Vehiculos<br>automotores<br>de<br>pasajeros</th>
+            <th class="formato-th-cuatro">Resto</th>
+        </tr>
+
+        <tr> <!--filas (tr)-->
+            <td> 25.000 +</td> 
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+        </tr>
+
+        <tr> <!--filas (tr)-->
+            <td>20.000 +</td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td>15.000 +</td>
+            <td></td> 
+            <td>X</td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <!--2017-->
+            <td class="positivo"><b>23,0%</b></td>
+            <td class="positivo"><b>15,2%</b></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td>10.000 +</td>
+            <td>X</td> 
+            <td></td>
+            <td></td> 
+            <td>X</td>
+            <td></td> 
+            <td></td> 
+            <td></td>
+            <!---->
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td class="positivo"><b>14,3%</b></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td>5.000 +</td>
+            <td></td> 
+            <td></td>
+            <td>X</td> 
+            <td></td>
+            <td>X</td> 
+            <td>X</td> 
+            <td></td>
+            <!---->
+            <td></td>
+            <td></td> 
+            <td class="positivo"><b>15,8%</b></td> 
+            <td></td> 
+            <td class="positivo"><b>20,9%</b></td> 
+            <td class="positivo"><b>40,9%</b></td> 
+            <td></td> 
+        </tr>
+
+        <tr> <!--filas (tr)-->
+            <td>0 +</td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td>X</td>
+            <td></td>
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td></td> 
+            <td class="positivo"><b>38,9%</b></td> 
+        </tr>
+     
+   </table>
+ </div>
+
+    <br><br>
+  <hr>
+     <br><br>
+  <p>5. Realice una tabla que represente la información de la siguiente gráfica:</p>
+       <br><br>
+
+<!--Tabla 5-->
+<div class="contenedor-tablas">
+   <table border="2">
+
+        <tr> <!--filas (tr)-->
+            <th class="-arg" colspan="5">ARGENTINA</th>
+            <th class="americaLatina-style -america"colspan="5">AMERICA <br>LATINA</th>
+        </tr>
+        <tr> <!--filas (tr)-->
+        	<td class="años">Años</td>
+            <td class="-arg">20%</td> 
+            <td class="-arg">25%</th> 
+            <td class="-arg">30%</td> 
+            <td class="-arg">35%</td>
+            <td class="americaLatina-style -america">20%</td>  
+            <td class="americaLatina-style -america">25%</th> 
+            <td class="americaLatina-style -america">30%</td>  
+            <td class="americaLatina-style -america">35%</td>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td class="años"> 2010 </td>
+            <td> </td> 
+            <td> X </th> 
+            <td> X</td> 
+            <td> </td>
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> X</th> 
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </td>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td class="años"> 2011</td>
+            <td> </td> 
+            <td> X </th> 
+            <td> </td> 
+            <td> </td>
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> X</th> 
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </td>
+        </tr>
+          <tr> <!--filas (tr)-->
+            <td class="años"> 2012</td>
+            <td> </td> 
+            <td> X</th> 
+            <td> X</td> 
+            <td> </td>
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> X</th> 
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </td>
+        </tr>
+          <tr> <!--filas (tr)-->
+            <td class="años"> 2013</td>
+            <td> </td> 
+            <td> X</th> 
+            <td> X</td> 
+            <td> </td>
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> X</th> 
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </td>
+        </tr>
+          <tr> <!--filas (tr)-->
+            <td class="años"> 2014</td>
+            <td> </td> 
+            <td> X</th> 
+            <td> X</td> 
+            <td> </td>
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style">X </th> 
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </td>
+        </tr>
+          <tr> <!--filas (tr)-->
+            <td class="años"> 2015</td>
+            <td> </td> 
+            <td> X</th> 
+            <td> X</td> 
+            <td> </td>
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> X</th> 
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </td>
+        </tr>
+          <tr> <!--filas (tr)-->
+            <td class="años"> 2016</td>
+            <td> </td> 
+            <td> </th> 
+            <td> X</td> 
+            <td> X</td>
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style">X </th> 
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </td>
+        </tr>
+           <tr> <!--filas (tr)-->
+            <td class="años"> 2017</td>
+            <td> </td> 
+            <td> </th> 
+            <td> X</td> 
+            <td> X</td>
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> X</th> 
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </td>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td class="años"> 2018</td>
+            <td> </td> 
+            <td> </th> 
+            <td> </td> 
+            <td> X</td>
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </th> 
+            <td class="americaLatina-style"> </td> 
+            <td class="americaLatina-style"> </td>
+        </tr>
+       
+   </table>
+ </div>
+
+    <br><br>
+  <hr>
+    <br><br>
+  <p>6. Analice el siguiente gráfico y represéntela mediante el uso de tabla. Asimismo, agregue el valor correspondiente al año 2019:</p>
+    <br><br>
+
+<!--Tabla 6-->
+<div class="contenedor-tablas">
+   <table border="2">
+
+        <tr> <!--filas (tr)-->
+            <th class="energeticos" colspan="6">MATRIZ ENERGÉTICA ARGENTINA 1970</th>
+        </tr>
+        <tr> <!--filas (tr)-->
+        	<td class="productos-energeticos">Productos<br>energeticos</td>
+            <td class="Un-porciento">1%</td> 
+            <td class="Dos-porciento">3%</th> 
+            <td class="Tres-porciento">7%</td> 
+            <td class="Cuatro-porciento">18%</td>
+            <td class="Cinco-porciento">71%</td>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td class="productos-energeticos"> HIDRÁULICA </td>
+            <td> X </td> 
+            <td> </th> 
+            <td> </td> 
+            <td> </td>
+            <td> </td> 
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td class="productos-energeticos"> CARBÓN</td>
+            <td> </td> 
+            <td> X </datos> 
+            <td> </td> 
+            <td> </td>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td class="productos-energeticos"> BIOMASA</td>
+            <td> </td> 
+            <td> </td> 
+            <td> X</td> 
+            <td> </td>
+            <td> </td> 
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td class="productos-energeticos"> GAS</td>
+            <td> </td> 
+            <td> </td> 
+            <td> </td> 
+            <td> X</td>
+            <td> </td>
+        </tr>
+        <tr> <!--filas (tr)-->
+            <td class="productos-energeticos">PETROLEO</td>
+            <td> </td> 
+            <td> </td> 
+            <td> </td> 
+            <td> </td>
+            <td> X</td>
+        </tr>
+ 
+   </table>
+ </div>
+
+    <br><br><br><br><br>
+
+</body>
+</html>
